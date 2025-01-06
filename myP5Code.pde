@@ -4,7 +4,7 @@ void setup() {
 }
 
 //🎯Variable Declarations Go Here
-var fireworkX = 20;
+var lightningSize = 1;
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
@@ -17,9 +17,19 @@ draw = function(){
   }
   
   //🎯Animation Code Goes Here
-  rect(fireworkX, 15, 10, 10);
+  strokeWeight(lightningSize);
+  stroke(0,0,0);
+  line(208, 112, 182, 154);
+  line(182, 154, 211, 185 );
+  line( 211, 185, 178, 227);
+  line( 178, 227, 219, 260);
+  line( 219, 260, 168,296 );
+  line(168, 296,200,333)
+  lightningSize = lightningSize + 1;
   
-  fireworkX = fireworkX + 1;
+  if(lightningSize>20){
+     lightningSize=1
+  }
 
 }
 

@@ -7,13 +7,13 @@ void setup() {
 
 //🎯Variable Declarations Go Here
 var lightningSize = 1;
-var rainSize=1;
 var rainY=113;
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
  
   background(255,255,255,0);
+
   
    if(mousePressed){
     showXYPositions();
@@ -21,6 +21,7 @@ draw = function(){
   }
   
   //🎯Animation Code Goes Here
+  
   stroke(255,255,255);
   strokeWeight(lightningSize);
   line(208, 112, 182, 154);
@@ -49,8 +50,10 @@ draw = function(){
  ellipse(168,rainY,1,10)
  ellipse(263,rainY,1,10)
  ellipse(338,rainY,1,10)
-   rainY=rainY+5 
-}
+   rainY=rainY+5 ;
+   
+   if(rainY>300){rainY=113;}
+   }
 
 
 //🟡Extra FUN Features Ms. Hall Added

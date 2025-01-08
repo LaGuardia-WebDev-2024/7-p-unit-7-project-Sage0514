@@ -9,12 +9,48 @@ body {
   background-image: url("https://amsweatherband.org/weatherband/assets/Image/vasily%20iakovlev%20dsc_6386.jpg");
   background-size: 700px;
   border-radius: 30px;
-  border: 1px solid rgb(255,245,227);
+  border: 5px solid rgb(141, 92, 254 );
 }
 
 .main{
   display: flex;
   text-align: left;
-  justify-content: space-around;
+  justify-content: space-around; 
+  font-family: "Jersey 15", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:16pt;
+
+}
+
+.goals {
+  color:rgb(223, 209, 255);
+  background-color:rgb(50, 0, 164);
+  text-align:center;
+  border-radius:30px;
+ 
+}
+
+.goals2 {
+  color:rgb(50, 0, 164);
+  background-color:rgb(223, 209, 255);
+  border-radius: 5px;
+}
+
+#new{
+  color:rgb(223, 209, 255);
+  font-family: "Jersey 15", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:40pt;
+
+}
+#year {
+  color:rgb(141, 92, 254);
+  font-family: "Jersey 15", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:30pt;
+
 }
 

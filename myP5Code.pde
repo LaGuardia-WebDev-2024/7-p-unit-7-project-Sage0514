@@ -8,6 +8,7 @@ void setup() {
 //🎯Variable Declarations Go Here
 var lightningSize = 1;
 var rainY=113;
+var lightningSize3=10;
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
@@ -34,15 +35,23 @@ draw = function(){
   line(31,171,56,187);
   line(56,187,33,210);
   line(33,210,54,230);
-  line(123,120,112,147);
-  line(112,147,128,153);
-  line(128,153,114,174);
-  lightningSize = lightningSize + 1;
+  lightningSize += 1;
   
   if(lightningSize>10){
      lightningSize=1;
+     }
      
+  stroke(255,255,255); 
+  strokeWeight(lightningSize3);
+  line(123,120,112,147);
+  line(112,147,128,153);
+  line(128,153,114,174);
+  lightningSize3-=1;
+  
+  if(lightningSize3<1){
+  lightningSize3=10;
   }
+
 
   stroke(79, 2, 254 );
   strokeWeight(1)
